@@ -4,81 +4,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your additional styles here */
+        body {
+            background-color: #1f1f1f;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: #333;
+            border: 1px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            height: 85vh;
+            overflow: auto;
+        }
+
+        #contact-me, #resume, #leadership {
+            height: 80vh;
+            overflow: auto;
+            padding: 20px; /* Add padding for better aesthetics */
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #6176ff;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6176ff;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #6176ff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        #skills p {
+            margin-bottom: 20px; /* Adjust the margin as needed */
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #ddd;
+        }
+
+        a {
+            color: #7661ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: black;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a.current {
+            color: rgb(201, 92, 92);
+        }
+
+        /* Additional styles for the homepage */
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #home img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        section p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            max-width: 650px; 
+        }
+
+        #education h3,i{
+            color:#fff;
+        }
+
+    </style>
 </head>
 
 <body>
+    <!---<header>
+        <h1>My Portfolio</h1>
+    </header>--->
 
-    <!-- Navigation Bar -->
-    <!-- Add your navigation bar here -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact-me">Contact </a>
+    </nav>
 
-    <!-- Header Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Your Name</h1>
-            <p class="lead">Computer Science Student | Cybersecurity Enthusiast</p>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <!-- Add your profile information here -->
-        </div>
-    </section>
-
-    <!-- Professional Experience Section -->
-    <section id="experience" class="py-5">
-        <div class="container">
-            <!-- Add your professional experience here -->
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-5">
-        <div class="container">
-            <!-- Add your education details here -->
+    <section id="home" data-aos="fade-up">
+        <img src="sneh.jpg" alt="Profile Image" width="350">
+        <div>
+            <h1>Sneh Singh</h1>
+             <p>I am a student at National Forensic Sciences University pursuing B.TECH in CSE (Cyber Security). I find the
+                technical world to be very intriguing and thus haven’t restricted myself and thereby self-explored different technologies.
+                My primary tech interests lie in the field of Cyber Security and Data science. I am an aspiring leader and offer key
+                strengths in critical thinking, delegation and communication. With a strong commitment to progress and goal
+                achievement, I am well-versed in streamlining processes, driving efficiency and encouraging team performance.My
+                educational background has given me a solid understanding of Cybersecurity and Development.</p>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <!-- Add your technical skills here -->
-        </div>
+    <section id="experience" data-aos="fade-up">
+        <h2>Experience</h2>
+            <h3>Cyforce, Cybersecurity Intern | Remote</h3>
+            <ul>
+                <li>Worked on Network Security and VAPT, working with different cybersecurity tools, Case study.</li>
+            </ul>
+        
+            <h3>ISOEH, Kolkata, Training, Network Security | WB, INDIA</h3>
+            <ul>
+                <li>Configuring and Troubleshooting networks, designing and implementing various network topologies, experimenting with
+                    routing protocols, and practicing subnetting and VLAN configurations.</li>
+            </ul>
+        
+            <h3>Student Startup Innovation Policy, Founder, Developer | Guj, India</h3>
+            <ul>
+                <li>Developing Forensic Tool for law enforcement agencies.</li>
+            </ul>
+        
+            <h3>Microsoft Cyber Security Engage Program: Intern | Remote</h3>
+            <ul>
+                <li>Learn basics of cybersecurity and few tools like Autopsy and Wireshark.</li>
+            </ul>
+        
+            <h3>Google Cloud Facilitator Program: Intern | Remote</h3>
+            <ul>
+                <li>Understand cloud and get hands-on Google Cloud. We learnt Application Development, Big Data And Machine Learning.</li>
+            </ul>
+        
+            <h3>Android Development, MyCaptain: Trainee | Remote</h3>
+            <ul>
+                <li>Learn Android Development and make basic apps like a calculator.</li>
+            </ul>        
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <!-- Add your projects here -->
-        </div>
+    <section id="education" data-aos="fade-up">
+        <h2>Education</h2>
+        <h3>B.Tech-Mtech in Computer Science Engineering with specialization in Cyber Security</h3>
+            <p style="margin-bottom: 10px;">
+                <i>National Forensic Sciences University <br> Gujarat, India </i><br>
+                
+            </p>
+        <h3>B.Sc in Programming and Data Science</h3>
+        <p style="margin-bottom: 10px;">
+            <i>Indian Institute of Technology Madras <br> Tamil Nadu, India</i><br>
+        </p>
+        <h3>High School-ISC</h3>
+        <p style="margin-bottom: 10px;">
+            <i>The Heritage School <br>
+             West Bengal, India</i><br>
+             PCM-92/100 
+        </p>
+        <h3>Secondary School-ICSE </h3>
+        <p style="margin-bottom: 10px;">
+            <i>The Heritage School <br> West Bengal, India</i><br>
+            Science-94/100
+        </p>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="py-5">
-        <div class="container">
-            <!-- Add your certificates here -->
-        </div>
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <h3>Programming</h3>
+        <p>Python, C/C++, C#, Java, R, MySql, Php, Javascript, Rust, Git, Scripting (Bash), LaTeX, HTML, CSS, Bootstrap, Vim, Nano, Django</p>
+        
+        <h3>CyberSecurity</h3>
+        <p>Nmap, Netcat, Snort, Metaspoilt, Autopsy, FTKImager, Wireshark, Cisco Packet Tracer</p>
+        
+        <h3>Software</h3>
+        <p>Linux, Tensorflow, Pytorch, Docker, OpenCV, Mediapipe, Hadoop, Pig, Hive</p>
+        
+        <h3>Soft Skills</h3>
+        <p> Interpersonal skills, Communication, Leadership, Problem-Solving, Teamwork</p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <!-- Add a contact form and link to your resume -->
-            <a href="downloads/YourResume.pdf" class="btn btn-primary">Download Resume</a>
-        </div>
+    <section id="certifications" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <ul style="font-size: 25px ;">
+            <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals</li>
+            <li>Microsoft Technical Associate Certification in Python</li>
+            <li>Microsoft Certified: Azure AI Fundamentals</li>
+            <li>Microsoft Azure Fundamentals Certification</li>
+            <li>Certification in CISCO: Introduction to Cybersecurity</li>
+            <li>Certification In Databases And SQL For Data Science With Python By IBM</li>
+            <li>Certification In Data Science Methodology By IBM</li>
+          </ul>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-    </footer>
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+        <h3>Website to exchange PYQ (Personal Project)</h3>
+        <ul style="font-size: 15px;">
+            <li>An website built for NFSU students to share PYQ and resources across different campuses.</li>
+            <li>Done using Javascript, Mysql, HTML,CSS .</li>
+        </ul>
+
+        <h3>Interpretation of Sign Languages using Python (Course Project)</h3>
+        <ul style="font-size: 15px;">
+            <li>Using Python, Mediapipe, and OpenCV.</li>
+            <li>This was used to convert sign languages to text in real-time.</li>
+        </ul>
+
+        <h3>Music Streaming App (Course Project)</h3>
+        <ul style="font-size: 15px;">
+            <li>An web app made using Jinja, Flask, and SQL.</li>
+            <li>Allows admin, users, and creators to upload songs, listen, and create playlists.</li>
+        </ul>
+
+        <h3>Model for Disaster Management (Personal Project)</h3>
+        <ul style="font-size: 15px;">
+            <li>A model to predict and manage threat zones during industrial disasters.</li>
+            <li>Optimizing emergency response and evacuation strategies.</li>
+        </ul>
+
+        <h3>Certificate Generation and Validation using Blockchain (Smart India Hackathon 2023)</h3>
+        <ul style="font-size: 15px;"> 
+            <li>Developed a solution based on Ethereum and polygon scaling solution for certificate generation and validation using blockchain technology.</li>
+        </ul>
+
+        <h3>Student Placement Portal (UI Project)</h3>
+        <ul style="font-size: 15px;">
+            <li>Build using HTML, CSS, and JavaScript.</li>
+            <li>User interface for a placement portal.</li>
+        </ul>
+
+        <h3>Student Attendance System (Course Project)</h3>
+        <ul style="font-size: 15px;">
+            <li>Made using C++.</li>
+            <li>Used to calculate the attendance of the student.</li>
+        </ul>
+        
+    </section>
+    
+    <section id="leadership" data-aos="fade-up">
+        <h2>Position of Leadership</h2>
+        <ul>
+            <li><b style="font-size: large;">President </b> </li>
+            <i>Programming Club-NFSU</i><br>
+            <i>2023-24</i>
+            <li><b style="font-size: large;">Secretary</b></li>
+            <i>COSMOS IITM Tech Society</i><br>
+            2023-24</i>
+            
+            <li><b style="font-size: large;">Core Member</b></li>
+            <i> GDSC, NFSU <br>
+                2023
+            </i>
+        </ul>
+    </section>
+
+    <section id="resume" data-aos="fade-up">
+        <h2>Resume</h2>
+        <iframe src="resume.pdf" width="90%" height="80%"></iframe>
+    </section>
+
+    <section id="contact-me" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:sneh2105@gmail.com">sneh2105@gmail.com</a></p>
+        <p>Website: <a href="https://sneh2105.github.io/snehsingh/" target="_blank">sneh2105.github.io/snehsingh/</a></p>
+        <p>Github: <a href="https://github.com/sneh2105" target="_blank">github.com/sneh2105</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sneh-singh-cs/" target="_blank">linkedin.com/in/sneh-singh-cs/</a></p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove('current');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('current');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
